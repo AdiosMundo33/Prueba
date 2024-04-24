@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- La declaración DOCTYPE indica al navegador que esta página es un documento HTML5. -->
+<html lang="es">
+<!-- La etiqueta <html> inicia el documento HTML, con el atributo 'lang' establecido en 'es' para indicar que el contenido está en español. -->
+
 <head>
+    <!-- La sección <head> contiene metadatos y enlaces a hojas de estilo externas. -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- El elemento <meta> con charset="UTF-8" especifica que el documento usa la codificación de caracteres UTF-8. -->
+    <title>Bienvenidos a mi tarea de Git</title>
+    <!-- El elemento <title> define el título de la página, que aparece en la pestaña del navegador. -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- El elemento <link> vincula una hoja de estilos CSS externa al documento. -->
 </head>
+
 <body>
- <h1>Goodbye</h1>   
+    <!-- La etiqueta <body> encierra el contenido principal que será visible para los usuarios. -->
+    <div class="container">
+        <!-- Un <div> con la clase "container" usado como contenedor principal para centrar y estilizar el contenido. -->
+        <header>
+            <!-- La etiqueta <header> agrupa contenido introductorio o navegacional. -->
+            <h1>Bienvenidos a mi tarea de Git</h1>
+            <!-- <h1> es un encabezado de primer nivel, que se utiliza para los títulos más importantes en una página. -->
+        </header>
+        <main>
+            <!-- La etiqueta <main> encierra el contenido principal de la página web. -->
+            <p>Esta tarea es para practicar los comandos básicos de Git y la colaboración en GitHub.</p>
+            <!-- Un párrafo <p> que describe el propósito de la página. -->
+            <button id="changeColor">Cambiar Color de Fondo</button>
+            <!-- Un botón que los usuarios pueden pulsar para cambiar el color de fondo de la página. -->
+            <div class="links">
+                <!-- Un <div> para agrupar enlaces. -->
+                <a href="https://git-scm.com/doc" target="_blank">Documentación de Git</a>
+                <!-- Un enlace <a> que abre la documentación de Git en una nueva pestaña. -->
+                <a href="https://docs.github.com/" target="_blank">Documentación de GitHub</a>
+                <!-- Un enlace <a> que abre la documentación de GitHub en una nueva pestaña. -->
+            </div>
+        </main>
+        <footer>
+            <!-- La etiqueta <footer> se utiliza para contener información de pie de página. -->
+            <p>Gracias por visitar mi proyecto.</p>
+            <!-- Un párrafo dentro del pie de página agradeciendo a los visitantes. -->
+        </footer>
+    </div>
+    <script src="app.js"></script>
+    <!-- Vincula un archivo JavaScript externo llamado 'app.js' que probablemente contenga la lógica para cambiar el color de fondo. -->
 </body>
 </html>
